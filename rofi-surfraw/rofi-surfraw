@@ -69,6 +69,7 @@ else
     search="${elvi}"
     if [[ $method == "surfraw" ]]; then
         sr ${bang} ${search}
+	i3-msg [class="Firefox"] focus
     elif [[ $method == "custom" ]]; then
         "$SURFRAW_graphical_browser" $SURFRAW_graphical_browser_args ${bang}"${search}"
     fi
