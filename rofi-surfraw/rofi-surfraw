@@ -15,8 +15,8 @@ if [[ ! -f $HOME/.config/rofi-surfraw/searchengines ]]; then
 fi
 
 # get local config
-if [[ -f $HOME/.config/rofi-surfraw/config ]]; then
-    source $HOME/.config/rofi-surfraw/config
+if [[ -f $(dirname $0)/config ]]; then
+    source $(dirname $0)/config
 fi
 
 # get list of search engines from surfraw
